@@ -1,0 +1,26 @@
+{
+  "name": "skylark-bi-agent-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Skylark Drones Monday.com BI Agent — Backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.82.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "transform": {},
+    "testMatch": ["**/tests/**/*.js"]
+  }
+}
